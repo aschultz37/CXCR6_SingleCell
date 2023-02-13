@@ -1,10 +1,12 @@
 raw/
 iCellR_obj/
+output/
 
 *.rds
 *.Robj
 *.csv
 *.png
+*.html
 
 .Rhistory
 .Rdata
