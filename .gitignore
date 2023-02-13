@@ -1,0 +1,10 @@
+raw/
+iCellR_obj/
+
+*.rds
+*.Robj
+*.csv
+*.png
+
+.Rhistory
+.Rdata
