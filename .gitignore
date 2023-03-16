@@ -4,6 +4,7 @@ output/
 SCENIC/int/
 SCENIC/output/
 SCENIC/resources/
+SCENIC/logs/
 
 *.rds
 *.Robj
