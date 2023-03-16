@@ -179,7 +179,7 @@ scobj <- RunUMAP(scobj, dims=1:17)
 
 Show the UMAP and the number of cells in each cluster.
 ```{r show_umap}
-DimPlot(scobj, reduction="umap", pt.size=2.5, cols=custom_color_palette)
+DimPlot(scobj, reduction="umap", pt.size=1, cols=custom_color_palette)
 table(Idents(scobj))
 ```
 
@@ -219,7 +219,7 @@ LN Trm module score.
 ```{r Trm_modulescore}
 scobj <- AddModuleScore(object=scobj, features=list(LN_Trm_genes),
                              ctrl=100, name="LN_Trm")
-FeaturePlot(scobj, features="LN_Trm1", pt.size=2.5, 
+FeaturePlot(scobj, features="LN_Trm1", pt.size=1, 
             cols=rev(brewer.pal(n=11, name="RdBu")))
 ```
 
@@ -227,7 +227,7 @@ TGFb module score.
 ```{r tgfb_modulescore}
 scobj <- AddModuleScore(object=scobj, features=list(TGFb_genes),
                              ctrl=100, name="TGFb")
-FeaturePlot(scobj, features="TGFb1", pt.size=2.5, 
+FeaturePlot(scobj, features="TGFb1", pt.size=1, 
             cols=rev(brewer.pal(n=11, name="RdBu")))
 ```
 
@@ -235,7 +235,7 @@ TCR module score.
 ```{r tcr_modulescore}
 scobj <- AddModuleScore(object=scobj, features=list(TCR_genes),
                              ctrl=100, name="TCR")
-FeaturePlot(scobj, features="TCR1", pt.size=2.5, 
+FeaturePlot(scobj, features="TCR1", pt.size=1, 
             cols=rev(brewer.pal(n=11, name="RdBu")))
 ```
 
@@ -243,7 +243,7 @@ TSCM module score.
 ```{r tscm_modulescore}
 scobj <- AddModuleScore(object=scobj, features=list(TSCM_genes),
                              ctrl=100, name="TSCM")
-FeaturePlot(scobj, features="TSCM1", pt.size=2.5, 
+FeaturePlot(scobj, features="TSCM1", pt.size=1, 
             cols=rev(brewer.pal(n=11, name="RdBu")))
 ```
 
