@@ -1,4 +1,5 @@
 # NOTE: This needs to be run in the same R session as pt1
+# This is no longer necessasry with the try() function in pt1
 
 motifAnnotations_mgi <- motifAnnotations
 runGenie3(exprMat_filtered_log, scenicOptions)
