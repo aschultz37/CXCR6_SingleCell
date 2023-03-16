@@ -1,6 +1,6 @@
 library(SCENIC)
 
-setwd("/gpfs/home/acs9950/singlecell/2022-12-29/SCENIC/")
+setwd("/gpfs/home/acs9950/singlecell/2020-12-16/SCENIC/")
 
 # Run commented code only if RDS does not exist.
 # scenicOptions <- initializeScenic(org="mgi",
@@ -16,7 +16,7 @@ library(dplyr)
 library(Seurat)
 library(loomR)
 library(SeuratDisk)
-seurat_obj <- readRDS("../LN/output/2022-12-29_LN_sub1_rmbc_figs.rds")
+seurat_obj <- readRDS("../output/cxcr6_figs.rds")
 # note that this causes an error if loom file already exists
 # it will not overwrite the existing file and will halt execution
 loom <- as.loom(seurat_obj)

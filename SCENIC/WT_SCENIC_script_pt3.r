@@ -7,12 +7,12 @@ library(dplyr)
 library(Seurat)
 library(AUCell)
 
-setwd("/gpfs/home/acs9950/singlecell/2022-12-29/SCENIC")
+setwd("/gpfs/home/acs9950/singlecell/2020-12-16/SCENIC")
 
 scenicOptions <- readRDS("int/scenicOptions.Rds")
 exprMat_log <- readRDS("int/exprMat_log.Rds")
 
-seurat_obj <- readRDS("../LN/output/2022-12-29_LN_sub1_rmbc_figs.rds")
+seurat_obj <- readRDS("../output/cxcr6_figs.rds")
 
 aucellApp <- plotTsne_AUCellApp(scenicOptions, exprMat_log)
 savedSelections <- shiny::runApp(aucellApp)

@@ -1,12 +1,16 @@
 raw/
 iCellR_obj/
 output/
+SCENIC/int/
+SCENIC/output/
+SCENIC/resources/
 
 *.rds
 *.Robj
 *.csv
 *.png
 *.html
+*.loom
 
 .Rhistory
 .Rdata
